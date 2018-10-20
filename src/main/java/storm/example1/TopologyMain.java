@@ -24,7 +24,7 @@ public class TopologyMain {
 //		LocalCluster cluster = new LocalCluster();
 		
 		try {
-			StormSubmitter.submitTopology("Yahoo-Finanace-Topology", conf, topology);
+			StormSubmitter.submitTopology("Yahoo-Finance-Topology", conf, topology);
 		} catch (AlreadyAliveException e) {
 			e.printStackTrace();
 		} catch (InvalidTopologyException e) {
